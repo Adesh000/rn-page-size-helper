@@ -1,26 +1,33 @@
 # @babacoder/rn-page-size-helper
 
-Package to check the page size of the app
+A React Native module that detects Android 16KB Page Size compatibility by scanning your installed APK and checking each .so library for ELF alignment.
+
+This helps you determine whether your app is compatible with devices using the new 16KB memory page size (Android 15+, some OEMs).
 
 ## Installation
-
 
 ```sh
 npm install @babacoder/rn-page-size-helper
 ```
 
-
 ## Usage
 
-
 ```js
-import { multiply } from '@babacoder/rn-page-size-helper';
+import { scan } from '@babacoder/rn-page-size-helper';
 
-// ...
+useEffect(() => {
+  const runScan = async () => {
+    try {
+      const result = await scan();
+      console.log('Scan result:', result);
+    } catch (e) {
+      console.error('Scan error:', e);
+    }
+  };
 
-const result = multiply(3, 7);
+  runScan();
+}, []);
 ```
-
 
 ## Contributing
 
