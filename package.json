@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Adesh000/babacoder-rn-page-size-helper.git"
+    "url": "git+https://github.com/Adesh000/rn-page-size-helper.git"
   },
   "author": "Adesh <adeshnayak007@gmail.com> (https://github.com/Adesh000)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Adesh000/babacoder-rn-page-size-helper/issues"
+    "url": "https://github.com/Adesh000/rn-page-size-helper/issues"
   },
-  "homepage": "https://github.com/Adesh000/babacoder-rn-page-size-helper#readme",
+  "homepage": "https://github.com/Adesh000/rn-page-size-helper#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
